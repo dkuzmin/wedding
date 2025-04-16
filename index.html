@@ -1,13 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Свадьба Кристина Денис</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кристина & Денис</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Кристина & Денис</h1>
-    <h3>2 августа 2025</h3> 
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Кристина & Денис</h1>
+      <p>В этом море любви мы наконец-то кидаем якорь.</p>
+    </div>
+  </header>
+
+<section class="calendar">
+  <h2>Август 2025</h2>
+  <div class="calendar-grid">
+    <div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div>
+
+    <!-- пустые клетки первой недели -->
+    <div></div><div></div><div></div><div></div><div>1</div>
+
+    <!-- 2 августа с сердцем -->
+    <div class="heart-border"><span>2</span></div>
+
+    <div>3</div>
+    <div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+	<div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div>
+	<div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+	<div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+  </div>
+</section>
+
+ <section class="timeline-section">
+    
+<div class="timeline">
+  <div class="line"></div>
+
+  <div class="event event-left">
+    <div class="time">16:00</div>
+    Welcome
+    <div class="dot"></div>
+  </div>
+
+  <div class="event event-right">
+    <div class="time">16:45</div>
+    Выездная регистрация
+    <div class="dot"></div>
+  </div>
+
+  <div class="event event-left">
+    <div class="time">17:15</div>
+    Начало банкета
+    <div class="dot"></div>
+  </div>
+
+  <div class="event event-right">
+    <div class="time">21:30</div>
+    Праздничный Торт
+    <div class="dot"></div>
+  </div>
+
+  <div class="event event-left">
+    <div class="time">22:00 – 00:00</div>
+    Дискотека
+    <div class="dot"></div>
+  </div>
+  </section>
+
+<section class="dresscode-section">
+    <h1 class="dresscode-title">Дресс-кот</h1>
+    <img src="suzanna.jpg" alt="Сюзи - наш инспектор" class="dresscode-cat">
+    <p class="dresscode-subtitle">Наш модный инспектор — Сюзанна. Одобряет элегантность и строгость.</p>
+
+    <h2 class="dresscode-style-title">Примеры дресс-кода</h2>
+    <p class="dresscode-style-desc">Строгий чёрный, стильный белый, немного жемчуга, уверенность и любовь к себе — всегда в тренде.</p>
+
+    <div class="gallery">
+      <img src="example1.jpg" alt="Look 1">
+      <img src="example2.jpg" alt="Look 2">
+      <img src="example3.jpg" alt="Look 3">
+      <img src="example4.png" alt="Look 4">
+      <img src="example5.jpg" alt="Look 5">
+      <img src="example6.jpg" alt="Look 6">
+    </div>
+  </section>
+
+  <section class="rsvp">
+    <h2>RSVP</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required />
+      <select required>
+        <option value="">Вы придёте?</option>
+        <option value="yes">Да, конечно!</option>
+        <option value="no">Увы, не смогу</option>
+      </select>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="waves"></div>
+    <p>Арсенальная набережная, 2 · Ресторан "Гребешки"</p>
+  </footer>
 </body>
 </html>

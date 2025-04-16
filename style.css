@@ -1,0 +1,239 @@
+
+body {
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+
+}
+
+.timeline-section {
+	display: flex;
+   justify-content: center;
+}
+
+.hero {
+  background: url('whale_background.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 40px;
+  margin: 10px 0 0;
+}
+
+.calendar {
+  padding: 40px 20px;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  color: white;
+}
+
+.calendar h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  gap: 10px;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.calendar-grid div {
+  position: relative;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+}
+
+.heart-border {
+  position: relative;
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.heart-border::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: url('heart-outline.svg') no-repeat center/contain;
+  pointer-events: none;
+}
+
+
+.highlight {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+
+  .timeline {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: #e57373;
+    height: 100%;
+  }
+
+  .event {
+    position: relative;
+    width: 50%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+  }
+
+  .event-left {
+    text-align: right;
+    left: 0;
+  }
+
+  .event-right {
+    text-align: left;
+    left: 50%;
+  }
+
+  .time {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e57373;
+  }
+
+  .dot {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #e57373;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 600px) {
+    .event, .event-left, .event-right {
+      width: 100%;
+      text-align: center;
+      left: 0;
+    }
+  }
+
+.dresscode-section {
+      padding: 4rem 1rem;
+    }
+    .dresscode-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .dresscode-cat {
+      width: 240px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .dresscode-subtitle {
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 1rem auto 3rem;
+      max-width: 600px;
+    }
+    .dresscode-style-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .dresscode-style-desc {
+      font-size: 2rem;
+      max-width: 500px;
+      margin: 0 auto 3rem;
+      font-style: italic;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 120px;
+      }
+    }
+
+.rsvp {
+  padding: 40px 20px;
+}
+
+.rsvp form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  background: #111;
+}
+
+.waves {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: url('waves.svg') repeat-x;
+  bottom: 100%;
+  left: 0;
+  animation: waveMotion 10s linear infinite;
+}
+
+@keyframes waveMotion {
+  0% { background-position-x: 0; }
+  100% { background-position-x: 1000px; }
+}
+
