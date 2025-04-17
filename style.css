@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Great Vibes", cursive;
-  background-color: #000;
+  background: url(whale_background.png) fixed center no-repeat black;
   color: #fff;
   text-align: center;
 }
@@ -12,13 +12,21 @@ body {
 }
 
 .hero {
-  background: url("whale_background.png") center/cover no-repeat;
   padding: 100px 20px;
 }
 
-.hero-text h1 {
-  font-size: 48px;
-  margin: 0;
+.hero-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 74pt;
+  margin: 0px;
+}
+
+.hero-text-element {
+  margin: 15px;
+  animation-name: titleMotion;
+  animation-duration: 1.5s;
 }
 
 .hero-text p {
@@ -236,5 +244,14 @@ footer {
   }
   100% {
     background-position-x: 1000px;
+  }
+}
+
+@keyframes titleMotion {
+  from {
+    flex-grow: 1;
+  }
+  to {
+    flex-grow: 0;
   }
 }
