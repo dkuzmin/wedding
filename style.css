@@ -18,20 +18,46 @@ body {
 .hero-text-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   font-size: 74pt;
   margin: 0px;
 }
 
 .hero-text-element {
-  margin: 15px;
+  margin: 0 15px;
+}
+
+.hero-text-element-left,
+.hero-text-element-right {
+  margin: 0 15px;
   animation-name: titleMotion;
   animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .hero-text p {
   font-size: 40px;
   margin: 10px 0 0;
+  opacity: 0;
+  animation-name: titleAppear;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 900px) {
+  .hero-text-container {
+    flex-direction: column;
+  }
+
+  .hero-text-element-left {
+    animation-name: titleMotionLeft;
+  }
+
+  .hero-text-element-right {
+    animation-name: titleMotionRight;
+  }
 }
 
 .calendar {
@@ -253,5 +279,32 @@ footer {
   }
   to {
     flex-grow: 0;
+  }
+}
+
+@keyframes titleAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes titleMotionLeft {
+  from {
+    margin-left: -10%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+
+@keyframes titleMotionRight {
+  from {
+    margin-left: 10%;
+  }
+  to {
+    margin-left: -10%;
   }
 }
