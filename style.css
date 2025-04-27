@@ -6,11 +6,6 @@ body {
   text-align: center;
 }
 
-.timeline-section {
-  display: flex;
-  justify-content: center;
-}
-
 .hero {
   padding: 100px 20px;
 }
@@ -120,64 +115,34 @@ body {
   font-weight: bold;
 }
 
-.timeline {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
+.timeline-section {
+  background: url(timeline.svg) no-repeat center / contain;
 }
 
-.line {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  background-color: #e57373;
-  height: 100%;
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeline-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px 10px;
 }
 
 .event {
-  position: relative;
   width: 50%;
-  padding: 20px 30px;
-  box-sizing: border-box;
+  font-family: 'Podkova';
 }
 
 .event-left {
   text-align: right;
-  left: 0;
 }
 
 .event-right {
   text-align: left;
-  left: 50%;
-}
-
-.time {
-  font-weight: bold;
-  font-size: 18px;
-  color: #e57373;
-}
-
-.dot {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  background-color: #e57373;
-  border-radius: 50%;
-}
-
-@media (max-width: 600px) {
-  .event,
-  .event-left,
-  .event-right {
-    width: 100%;
-    text-align: center;
-    left: 0;
-  }
 }
 
 .dresscode-section {
