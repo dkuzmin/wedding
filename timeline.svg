@@ -1,9 +1,9 @@
-<svg width="803" height="1310" viewBox="0 0 803 1310" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="803" height="1309" viewBox="0 0 803 1309" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_17_288)">
-<path d="M798 2C798 2 225.127 282.5 276 439C326.873 595.5 580.8 532.925 625 648.5C669.2 764.075 100.479 1044.96 16.5 960.5C-21.5125 922.27 60.6995 891.599 60.6995 891.599C60.6995 891.599 -16.1034 852.651 29.7597 804.918C127.46 703.234 695.144 1300 695.144 1300" stroke="white" stroke-width="3" shape-rendering="crispEdges"/>
+<path d="M797.536 2C797.536 2 224.664 282.5 275.537 439C326.409 595.5 580.337 532.925 624.537 648.5C668.736 764.075 100.016 1044.96 16.0366 960.5C-21.976 922.27 60.236 891.599 60.236 891.599C60.236 891.599 -16.5669 852.651 29.2963 804.918C126.996 703.234 624.537 1300 624.537 1300" stroke="white" stroke-width="3" shape-rendering="crispEdges"/>
 </g>
 <defs>
-<filter id="filter0_d_17_288" x="0.962402" y="0.65625" width="801.692" height="1308.37" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_17_288" x="0.499023" y="0.656006" width="801.691" height="1308.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
