@@ -4,6 +4,32 @@ body {
   background: url(whale_background.png) fixed center no-repeat black;
   color: #fff;
   text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: 'Podkova', serif;
 }
 
 .hero {
@@ -56,6 +82,7 @@ body {
 }
 
 @media (max-width: 500px) {
+
   .hero-text-element-left,
   .hero-text-element-right {
     animation-name: none;
@@ -65,6 +92,8 @@ body {
     animation-delay: 0s;
   }
 }
+
+/* Calendar */
 
 .calendar {
   padding: 40px 20px;
@@ -115,6 +144,28 @@ body {
   font-weight: bold;
 }
 
+/* Location */
+
+.location {
+  padding: 40px 20px;
+}
+
+.location-container {
+  background: url(grebeshki_background.jpg) no-repeat center / contain;
+  max-width: 600px;
+  aspect-ratio: 3/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-logo {
+  padding: 0 20px;
+}
+
+/* Timeline */
+
 .timeline-section {
   background: url(timeline.svg) no-repeat center / contain;
 }
@@ -148,40 +199,47 @@ body {
 .dresscode-section {
   padding: 4rem 1rem;
 }
+
 .dresscode-title {
   font-family: "Great Vibes", cursive;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
+
 .dresscode-cat {
   width: 240px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .dresscode-subtitle {
   font-size: 2rem;
   font-weight: 300;
   margin: 1rem auto 3rem;
   max-width: 600px;
 }
+
 .dresscode-style-title {
   font-family: "Playfair Display", serif;
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
+
 .dresscode-style-desc {
   font-size: 2rem;
   max-width: 500px;
   margin: 0 auto 3rem;
   font-style: italic;
 }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
 }
+
 .gallery img {
   width: 180px;
   height: auto;
@@ -189,6 +247,7 @@ body {
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
 @media (max-width: 768px) {
   .gallery img {
     width: 120px;
@@ -274,6 +333,7 @@ footer {
   0% {
     background-position-x: 0;
   }
+
   100% {
     background-position-x: 1000px;
   }
@@ -283,6 +343,7 @@ footer {
   from {
     flex-grow: 1;
   }
+
   to {
     flex-grow: 0;
   }
@@ -292,6 +353,7 @@ footer {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 100;
   }
@@ -301,6 +363,7 @@ footer {
   from {
     margin-left: -10%;
   }
+
   to {
     margin-left: 10%;
   }
@@ -310,6 +373,7 @@ footer {
   from {
     margin-left: 10%;
   }
+
   to {
     margin-left: -10%;
   }
