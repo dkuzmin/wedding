@@ -82,7 +82,6 @@ p {
 }
 
 @media (max-width: 500px) {
-
   .hero-text-element-left,
   .hero-text-element-right {
     animation-name: none;
@@ -138,12 +137,6 @@ p {
   pointer-events: none;
 }
 
-.highlight {
-  background: #fff;
-  color: #000;
-  font-weight: bold;
-}
-
 /* Location */
 
 .location {
@@ -196,6 +189,8 @@ p {
   text-align: left;
 }
 
+/* Dresscode Section */
+
 .dresscode-section {
   padding: 4rem 1rem;
 }
@@ -211,26 +206,6 @@ p {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.dresscode-subtitle {
-  font-size: 2rem;
-  font-weight: 300;
-  margin: 1rem auto 3rem;
-  max-width: 600px;
-}
-
-.dresscode-style-title {
-  font-family: "Playfair Display", serif;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-.dresscode-style-desc {
-  font-size: 2rem;
-  max-width: 500px;
-  margin: 0 auto 3rem;
-  font-style: italic;
 }
 
 .gallery {
@@ -253,6 +228,8 @@ p {
     width: 120px;
   }
 }
+
+/* Wishes Section */
 
 .wishes-section {
   display: flex;
@@ -284,6 +261,8 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* RSVP Section */
+
 .rsvp {
   padding: 40px 20px;
 }
@@ -310,6 +289,8 @@ button {
   color: #000;
   cursor: pointer;
 }
+
+/* Footer */
 
 footer {
   margin-top: 50px;
