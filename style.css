@@ -140,14 +140,14 @@ p {
 
 /* Location */
 
-.location {
-  padding: 40px 20px;
+.location-title {
+  margin: 20px;
 }
 
 .location-container {
   background: url(grebeshki_background.jpg) no-repeat;
   background-size: 100%;
-  max-width: 600px;
+  width: 600px;
   aspect-ratio: 3/2;
   display: flex;
   flex-direction: column;
@@ -156,7 +156,17 @@ p {
 }
 
 .location-logo {
-  padding: 0 20px;
+  margin: 40px;
+}
+
+@media (max-width: 600px) {
+  .location-container {
+    width: 100%;
+  }
+
+  .location-logo {
+    margin: 0 40px;
+  }
 }
 
 /* Timeline */
