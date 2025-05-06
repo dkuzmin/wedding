@@ -34,6 +34,13 @@ p {
 
 .hero {
   padding: 100px 20px;
+  height: 82vh;
+  background: url(header.webp) no-repeat top;
+  background-size: cover;
+}
+
+.hero-text {
+  margin-top: 435px;
 }
 
 .hero-text-container {
@@ -41,7 +48,7 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  font-size: 66pt;
+  font-size: 52pt;
   margin: 0px;
 }
 
@@ -68,6 +75,10 @@ p {
 }
 
 @media (max-width: 900px) {
+  .hero-text {
+    margin-top: 285px;
+  }
+
   .hero-text-container {
     flex-direction: column;
   }
