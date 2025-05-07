@@ -1,3 +1,8 @@
+html {
+  height: 100vh;
+  overflow: hidden
+}
+
 body {
   margin: 0;
   font-family: "Great Vibes", cursive;
@@ -5,13 +10,12 @@ body {
   color: #fff;
   text-align: center;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
   scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 section {
-  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
