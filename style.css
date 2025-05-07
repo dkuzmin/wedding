@@ -6,11 +6,11 @@ html {
 body {
   margin: 0;
   font-family: "Great Vibes", cursive;
-  background: url(whale_background.png) fixed center no-repeat black;
+  background: #000;
   color: #fff;
   text-align: center;
   justify-content: center;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
   height: 100vh;
 }
@@ -118,6 +118,7 @@ p {
   font-family: "Great Vibes", cursive;
   text-align: center;
   color: white;
+  background: url(whale_small.webp) no-repeat right;
 }
 
 .calendar h2 {
