@@ -190,7 +190,8 @@ p {
 /* Timeline */
 
 .timeline {
-  background: url(timeline.svg) no-repeat center / contain;
+  background: url(timeline.svg) no-repeat center;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;
