@@ -287,12 +287,10 @@ p {
   padding: 40px 20px;
 }
 
-.rsvp form {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin: auto;
-  gap: 10px;
+.rsvp-frame {
+  border: unset;
+  width: 100vw;
+  height: 120vh;
 }
 
 input,
