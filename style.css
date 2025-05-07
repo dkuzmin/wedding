@@ -40,7 +40,7 @@ p {
 
 .hero {
   padding: 100px 20px;
-  height: 82vh;
+  height: -webkit-fill-available;;
   background: url(header.webp) no-repeat top;
   background-size: cover;
   text-shadow: 0 0 2px black;
