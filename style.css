@@ -39,6 +39,7 @@ p {
   height: 82vh;
   background: url(header.webp) no-repeat top;
   background-size: cover;
+  text-shadow: 0 0 2px black;
 }
 
 .hero-text {
