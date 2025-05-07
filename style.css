@@ -41,7 +41,7 @@ p {
 
 .hero {
   padding: 100px 20px;
-  height: -webkit-fill-available;;
+  height: -webkit-fill-available;
   background: url(header.webp) no-repeat top;
   background-size: cover;
   text-shadow: 0 0 2px black;
@@ -292,6 +292,13 @@ p {
   border: unset;
   width: 100vw;
   height: 120vh;
+}
+
+.rsvp-success {
+  width: 100vw;
+  height: 100vh;
+  background: url(success.webp) no-repeat top;
+  background-size: cover;
 }
 
 input,
