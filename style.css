@@ -7,7 +7,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Podkova', serif;
   background: #000;
   color: #fff;
   text-align: center;
@@ -64,12 +64,13 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  font-size: 50pt;
   margin: 0px;
 }
 
 .hero-text-element {
   margin: 0 15px;
+  font-size: 50pt;
+  font-weight: normal;
 }
 
 .hero-text-element-left,
@@ -185,6 +186,16 @@ p {
 
 .location-logo {
   margin: 40px 60px;
+}
+
+.location-button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  color: buttontext;
+  background-color: buttonface;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
