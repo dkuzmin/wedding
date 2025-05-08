@@ -14,6 +14,7 @@ body {
   justify-content: center;
   scroll-snap-type: y proximity;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   height: 100vh;
 }
 
@@ -336,6 +337,8 @@ footer {
   left: 0;
   animation: waveMotion 10s linear infinite;
 }
+
+/* Animations */
 
 @keyframes waveMotion {
   0% {
