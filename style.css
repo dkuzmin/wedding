@@ -1,3 +1,5 @@
+/* Common */
+
 html {
   height: 100vh;
   overflow: hidden
@@ -10,7 +12,7 @@ body {
   color: #fff;
   text-align: center;
   justify-content: center;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
 }
@@ -38,6 +40,8 @@ h2 {
 p {
   font-family: 'Podkova', serif;
 }
+
+/* Header */
 
 .hero {
   padding: 100px 20px;
@@ -221,10 +225,6 @@ p {
 
 /* Dresscode Section */
 
-.dresscode-section {
-  padding: 4rem 1rem;
-}
-
 .dresscode-title {
   font-family: "Great Vibes", cursive;
   font-size: 2.5rem;
@@ -285,7 +285,7 @@ p {
 /* RSVP Section */
 
 .rsvp {
-  padding: 40px 20px;
+  scroll-snap-align: start end;
 }
 
 .rsvp-frame {
