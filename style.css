@@ -1,8 +1,18 @@
 /* Common */
 
+@font-face {
+  font-family: "Podkova";
+  src: url("fonts/Podkova/Podkova-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  src: url("fonts/Great_Vibes/GreatVibes-Regular.ttf") format("truetype");
+}
+
 html {
   height: 100vh;
-  overflow: hidden
+  overflow: hidden;
 }
 
 body {
