@@ -17,7 +17,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Podkova', serif;
+  font-family: "Podkova", serif;
   background: #000;
   color: #fff;
   text-align: center;
@@ -39,17 +39,17 @@ section {
 }
 
 h1 {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 2.5rem;
 }
 
 h2 {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 1.5rem;
 }
 
 p {
-  font-family: 'Podkova', serif;
+  font-family: "Podkova", serif;
 }
 
 /* Header */
@@ -67,6 +67,7 @@ p {
 
 .hero-text {
   margin-top: 400px;
+  width: 100%;
 }
 
 .hero-text-container {
@@ -85,49 +86,17 @@ p {
 
 .hero-text-element-left,
 .hero-text-element-right {
-  margin: 0 15px;
   animation-name: titleMotion;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
-.hero-text p {
-  font-size: 33px;
-  margin: 10px 0 0;
+.hero-text h2 {
   opacity: 0;
   animation-name: titleAppear;
   animation-delay: 1s;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-}
-
-@media (max-width: 900px) {
-  .hero-text {
-    margin-top: 170px;
-  }
-
-  .hero-text-container {
-    flex-direction: column;
-  }
-
-  .hero-text-element-left {
-    animation-name: titleMotionLeft;
-  }
-
-  .hero-text-element-right {
-    animation-name: titleMotionRight;
-  }
-}
-
-@media (max-width: 500px) {
-  .hero-text-element-left,
-  .hero-text-element-right {
-    animation-name: none;
-  }
-
-  .hero-text p {
-    animation-delay: 0s;
-  }
 }
 
 /* Calendar */
@@ -208,16 +177,6 @@ p {
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
-  .location-container {
-    width: 100%;
-  }
-
-  .location-logo {
-    margin: 0 60px;
-  }
-}
-
 /* Timeline */
 
 .timeline {
@@ -237,7 +196,7 @@ p {
 
 .event {
   width: 50%;
-  font-family: 'Podkova';
+  font-family: "Podkova";
 }
 
 .event-left {
@@ -278,12 +237,6 @@ p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
-  .gallery img {
-    width: 120px;
-  }
-}
-
 /* Wishes Section */
 
 .wishes-container {
@@ -295,12 +248,6 @@ p {
 
 .wishes {
   margin: 150px;
-}
-
-@media (max-width: 768px) {
-  .wishes {
-    margin: 100px 50px;
-  }
 }
 
 .wishes-text {
@@ -393,20 +340,64 @@ footer {
 
 @keyframes titleMotionLeft {
   from {
-    margin-left: -10%;
+    margin-right: -100%;
   }
 
   to {
-    margin-left: 10%;
+    margin-right: 0;
   }
 }
 
 @keyframes titleMotionRight {
   from {
-    margin-left: 10%;
+    margin-left: -100%;
   }
 
   to {
-    margin-left: -10%;
+    margin-left: 0;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .hero-text {
+    margin-top: 170px;
+  }
+
+  .hero-text-container {
+    flex-direction: column;
+  }
+
+  .hero-text-element-left {
+    animation-name: titleMotionLeft;
+  }
+
+  .hero-text-element-right {
+    animation-name: titleMotionRight;
+  }
+
+  .location-container {
+    width: 100%;
+  }
+
+  .location-logo {
+    margin: 0 60px;
+  }
+
+  .gallery img {
+    width: 120px;
+  }
+
+  .wishes {
+    margin: 100px 50px;
+  }
+}
+
+/* Phone */
+
+@media (max-width: 425px) {
+  .hero-text h2 {
+    animation-delay: 0s;
   }
 }
