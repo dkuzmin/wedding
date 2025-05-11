@@ -60,7 +60,7 @@ p {
   height: -moz-available;
   height: -webkit-fill-available;
   height: fill-available;
-  background: url(header.webp) no-repeat top;
+  background: url(header.jpg) no-repeat top;
   background-size: cover;
   text-shadow: 0 0 2px black;
 }
@@ -271,7 +271,7 @@ p {
   height: -moz-available;
   height: -webkit-fill-available;
   height: fill-available;
-  background: url(success.webp) no-repeat top;
+  background: url(success.jpg) no-repeat top;
   background-size: cover;
   display: none;
 }
