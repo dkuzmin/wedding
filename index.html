@@ -5,6 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Кристина & Денис</title>
+  
+  <script src="photoswipe/photoswipe.umd.min.js"></script>
+  <script src="photoswipe/photoswipe-lightbox.umd.min.js"></script>
+  <link rel="stylesheet" href="photoswipe/photoswipe.css">
+  
   <link rel="stylesheet" href="style.css" />
 
   <script type="application/javascript">
@@ -141,13 +146,13 @@
       себе — всегда в тренде.
     </p>
 
-    <div class="gallery">
-      <img src="example1.jpg" alt="Look 1" />
-      <img src="example2.jpg" alt="Look 2" />
-      <img src="example3.jpg" alt="Look 3" />
-      <img src="example4.png" alt="Look 4" />
-      <img src="example5.jpg" alt="Look 5" />
-      <img src="example6.jpg" alt="Look 6" />
+    <div class="pswp-gallery gallery" id="dresscode-gallery">
+      <a href="photo/example1.jpg" data-pswp-width="682" data-pswp-height="1024"><img src="photo/example1-tmb.webp" alt="" /></a>
+      <a href="photo/example2.jpg" data-pswp-width="1600" data-pswp-height="2170"><img src="photo/example2-tmb.webp" alt="" /></a>
+      <a href="photo/example3.jpg" data-pswp-width="675" data-pswp-height="800"><img src="photo/example3-tmb.webp" alt="" /></a>
+      <a href="photo/example4.png" data-pswp-width="800" data-pswp-height="533"><img src="photo/example4-tmb.webp" alt="" /></a>
+      <a href="photo/example5.jpg" data-pswp-width="736" data-pswp-height="736"><img src="photo/example5-tmb.webp" alt="" /></a>
+      <a href="photo/example6.jpg" data-pswp-width="338" data-pswp-height="508"><img src="photo/example6-tmb.webp" alt="" /></a>
     </div>
   </section>
 
@@ -188,6 +193,16 @@
   <section class="success"
     <div class="rsvp-success"></div>
   </section>
+
+  <script type="text/javascript">
+    var lightbox = new PhotoSwipeLightbox({
+      gallery: '#dresscode-gallery',
+      children: 'a',
+      // dynamic import is not supported in UMD version
+      pswpModule: PhotoSwipe 
+    });
+    lightbox.init();
+  </script>
 </body>
 
 </html>
