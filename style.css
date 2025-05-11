@@ -12,7 +12,7 @@
 
 html {
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 body {
@@ -22,9 +22,9 @@ body {
   color: #fff;
   text-align: center;
   justify-content: center;
-  scroll-snap-type: y proximity;
+  /* scroll-snap-type: y proximity;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; */
   height: 100vh;
 }
 
@@ -35,7 +35,7 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 66vh;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
 h1 {
