@@ -21,6 +21,15 @@
         document.getElementsByClassName("success")[0].style.display = "block";
       }
     };
+    
+    window.onload = function(event)  {
+      var lightbox = new PhotoSwipeLightbox({
+        gallery: '#dresscode-gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe 
+      });
+      lightbox.init();
+    }
   </script>
 </head>
 
@@ -190,20 +199,9 @@
     </iframe>
   </section>
 
-  <section class="success"
+  <section class="success">
     <div class="rsvp-success"></div>
   </section>
-
-  <script type="text/javascript">
-    window.onload = () => {
-      var lightbox = new PhotoSwipeLightbox({
-        gallery: '#dresscode-gallery',
-        children: 'a',
-        pswpModule: PhotoSwipe 
-      });
-      lightbox.init();
-    }
-  </script>
 </body>
 
 </html>
