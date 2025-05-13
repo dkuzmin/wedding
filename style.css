@@ -57,7 +57,7 @@ p {
   top: 580px;
   width: 100px;
   height: 100px;
-  animation: moveThrough 1500ms linear;
+  animation: moveThrough 1200ms linear;
   animation-fill-mode: forwards;
 }
 
