@@ -149,8 +149,9 @@ p {
   animation-delay: calc(var(--scroll) * -1s);
   position: absolute;
   background: url(whale_small.webp) no-repeat right;
-  width: 619px;
-  height: 257px;
+  width: 599px;
+  height: 230px;
+  margin-top: 210px;
 }
 
 /* Location */
