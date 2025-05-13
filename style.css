@@ -50,6 +50,65 @@ p {
   font-family: "Podkova", serif;
 }
 
+/* Tupic */
+
+.tupic-fader {
+  position:absolute;
+  top: 580px;
+  width: 100px;
+  height: 100px;
+  animation: moveThrough 1500ms linear;
+  animation-fill-mode: forwards;
+}
+
+.tupic-fader img {
+  position: absolute;
+  left: 0px;
+  height: 100px;
+  animation: imagefade 400ms ease-in-out 0s infinite;
+  opacity: 0;
+}
+
+@keyframes imagefade {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes moveThrough {
+  from {
+    left: -33%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.tupic-fader img:nth-of-type(1) {
+  animation-delay: 300ms;
+}
+.tupic-fader img:nth-of-type(2) {
+  animation-delay: 200ms;
+}
+.tupic-fader img:nth-of-type(3) {
+  animation-delay: 100ms;
+}
+.tupic-fader img:nth-of-type(4) {
+  animation-delay: 0s;
+}
+
 /* Header */
 
 .hero {
