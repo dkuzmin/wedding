@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="style.css" />
 
   <script type="application/javascript">
+    window.addEventListener('scroll', () => {
+      document.body.style.setProperty('--scroll', window.scrollY / (document.body.scrollHeight - document.body.clientHeight));
+    }, false);
+
     var loadCounter = 0;
     var loaded = function () {
       loadCounter += 1;

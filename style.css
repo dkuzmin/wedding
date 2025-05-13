@@ -10,16 +10,6 @@
   src: url("fonts/Great_Vibes/GreatVibes-Regular.ttf") format("truetype");
 }
 
-html {
-  height: 100vh;
-  /* overflow: hidden; */
-
-  overflow-y: scroll;
-  scroll-timeline: --whaleTimeline y;
-  /* Firefox supports the older "vertical" syntax */
-  scroll-timeline: --whaleTimeline vertical;
-}
-
 body {
   margin: 0;
   font-family: "Podkova", serif;
@@ -27,6 +17,7 @@ body {
   color: #fff;
   text-align: center;
   justify-content: center;
+  overflow-y: scroll;
   /* scroll-snap-type: y proximity;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; */
@@ -40,6 +31,8 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 66vh;
+  overflow: hidden;
+  position: relative;
   /* scroll-snap-align: start; */
 }
 
@@ -151,13 +144,13 @@ p {
 }
 
 .whale {
-  animation-name: whaleMotion;
-  animation-duration: 1ms; /* Firefox requires this to apply the animation */
-  animation-timeline: --whaleTimeline;
+  animation: whaleMotion 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
   position: absolute;
   background: url(whale_small.webp) no-repeat right;
-  height: 100%;
-  width: 100%;
+  width: 619px;
+  height: 257px;
 }
 
 /* Location */
@@ -379,11 +372,11 @@ footer {
 
 @keyframes whaleMotion {
   from {
-    margin-right: 300px;
+    margin-right: 800px;
   }
 
   to {
-    margin-right: -600px;
+    margin-right: -2000px;
   }
 }
 
