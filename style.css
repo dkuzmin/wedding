@@ -54,7 +54,7 @@ p {
 
 .tupic-fader {
   position:absolute;
-  top: 580px;
+  top: 0;
   width: 100px;
   height: 100px;
   animation: moveThrough 1200ms linear;
@@ -63,7 +63,7 @@ p {
 
 .tupic-fader img {
   position: absolute;
-  left: 0px;
+  /* left: 0px; */
   height: 100px;
   animation: imagefade 400ms ease-in-out 0s infinite;
   opacity: 0;
@@ -133,6 +133,10 @@ p {
   flex-direction: row;
   justify-content: center;
   margin: 0px;
+}
+
+.hero-text-subtitle-container {
+  position: relative;
 }
 
 .hero-text-element {
