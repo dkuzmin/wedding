@@ -265,6 +265,10 @@ p {
   margin: 25px 10px;
 }
 
+.timeline-path {
+  stroke-dasharray: 100;
+}
+
 .event {
   width: 50%;
   font-family: "Podkova";
@@ -330,11 +334,26 @@ p {
   margin: 50px 0;
 }
 
+/* Telegram */
+
+.telegram-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.telegram-icon {
+  height: 32px;
+  width: 32px;
+  margin-right: 10px;
+}
+
 /* RSVP Section */
 
 .rsvp-frame {
   border: unset;
-  height: 1005px;
+  height: 1160px;
 }
 
 .success {
