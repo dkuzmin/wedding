@@ -417,7 +417,7 @@ footer {
 
 @keyframes moveThrough {
   from {
-    left: -100px;
+    left: -30vw;
   }
   to {
     left: 100vw;
