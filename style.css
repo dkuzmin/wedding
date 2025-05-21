@@ -202,13 +202,32 @@ p {
 
 /* Timeline */
 
-.timeline {
-  background: url(timeline.svg) no-repeat center;
-  background-size: contain;
+.timeline-container {
+  width: 100%;
+  /* background: url(timeline.svg) no-repeat center;
+  background-size: contain; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.timeline {
+  position: absolute;
+  height: 100%;
+}
+
+.timeline-path {
+  stroke-dasharray: 775 25;
+  animation: dash 5s linear infinite reverse;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 800;
+  }
+}
+
+
 
 .timeline-row {
   display: flex;
@@ -217,8 +236,8 @@ p {
   margin: 25px 10px;
 }
 
-.timeline-path {
-  stroke-dasharray: 100;
+.time {
+  color: #F2B6C6;
 }
 
 .event {
