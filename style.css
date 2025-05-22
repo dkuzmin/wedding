@@ -217,13 +217,13 @@ p {
 }
 
 .timeline-path {
-  stroke-dasharray: 775 25;
-  animation: dash 5s linear infinite reverse;
+  stroke-dasharray: 1450 30 850 70;
+  animation: dash 5s cubic-bezier(0.28, 0.07, 0.15, 0.33) infinite reverse;
 }
 
 @keyframes dash {
   to {
-    stroke-dashoffset: 800;
+    stroke-dashoffset: 2400;
   }
 }
 
