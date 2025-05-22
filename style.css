@@ -218,7 +218,7 @@ p {
 
 .timeline-path {
   stroke-dasharray: 1450 30 850 70;
-  animation: dash 5s cubic-bezier(0.28, 0.07, 0.15, 0.33) infinite reverse;
+  animation: dash 5s cubic-bezier(0.46, 0.21, 0, 0.37) infinite reverse;
 }
 
 @keyframes dash {
