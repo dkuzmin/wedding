@@ -57,8 +57,10 @@ p {
   top: -20px;
   width: 100px;
   height: 100px;
+  left: -30vw;
   animation: moveThrough 1200ms linear;
   animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
 /* Header */
@@ -98,16 +100,19 @@ p {
 }
 
 .hero-text-element-left,
-.hero-text-element-right {
+.hero-text-element-right,
+.hero-text-element-center {
+  opacity: 0%;
   animation-name: titleMotion;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
 .hero-text h2 {
   opacity: 0;
   animation-name: titleAppear;
-  animation-delay: 1s;
+  animation-delay: 3s;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
@@ -324,7 +329,7 @@ p {
 
 .rsvp-frame {
   border: unset;
-  height: 1240px;
+  height: 1380px;
 }
 
 .success {
@@ -387,10 +392,12 @@ footer {
 @keyframes titleMotion {
   from {
     flex-grow: 1;
+    opacity: 0%;
   }
 
   to {
     flex-grow: 0;
+    opacity: 100%;
   }
 }
 
@@ -404,9 +411,19 @@ footer {
   }
 }
 
+@keyframes titleAppearMobile {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
 @keyframes titleMotionLeft {
   from {
-    margin-right: -100%;
+    margin-right: -200%;
   }
 
   to {
@@ -416,11 +433,21 @@ footer {
 
 @keyframes titleMotionRight {
   from {
-    margin-left: -100%;
+    margin-left: -200%;
   }
 
   to {
     margin-left: 0;
+  }
+}
+
+@keyframes titleMotionCenter {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
   }
 }
 
@@ -456,10 +483,23 @@ footer {
 
   .hero-text-element-left {
     animation-name: titleMotionLeft;
+    margin-right: -200%;
+    opacity: 100%;
   }
 
   .hero-text-element-right {
     animation-name: titleMotionRight;
+    margin-left: -200%;
+    opacity: 100%;
+  }
+
+  .hero-text-element-center {
+    animation-name: titleMotionCenter;
+    opacity: 0%;
+  }
+
+  .hero-text h2 {
+    animation-name: titleAppearMobile;
   }
 
   .location-container {
@@ -483,6 +523,6 @@ footer {
 
 @media (max-width: 425px) {
   .hero-text h2 {
-    animation-delay: 0s;
+    animation-delay: 2s;
   }
 }
