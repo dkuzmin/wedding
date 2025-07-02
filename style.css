@@ -223,7 +223,7 @@ p {
 
 .timeline-path {
   stroke-dasharray: 5000 1000 1500 500 12000 0;
-  animation: dash 15s linear infinite;
+  animation: dash 9s linear infinite;
 }
 
 @keyframes dash {
