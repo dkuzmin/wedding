@@ -260,7 +260,8 @@ p {
 
 /* Dresscode Section */
 
-.dresscode {
+.dresscode,
+.dresscode-examples {
   padding: 0 40px;
 }
 
@@ -331,6 +332,16 @@ p {
   height: 32px;
   width: 32px;
   margin-right: 10px;
+}
+
+/* Contacts */
+
+.contacts {
+  padding: 0 40px;
+}
+
+.contacts h2 {
+  margin-bottom: 0;
 }
 
 /* RSVP Section */
